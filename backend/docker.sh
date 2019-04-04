@@ -1,0 +1,1 @@
+docker pull cockroachdb/cockroach:v2.1.6
