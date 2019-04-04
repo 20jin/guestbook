@@ -1,18 +1,40 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="main">
+        <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+        <big-header/>
+        <info/>
+        <gallery/>
+        <replies/>
+        <contact/>
+        <big-footer/>
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+  // @ is an alias to /src
+  /*import HelloWorld from '@/components/HelloWorld.vue'*/
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  import BigHeader from '@/views/BigHeader';
+  import Info from '@/views/Info';
+  import Gallery from '@/views/Gallery';
+  import Replies from '@/views/Replies';
+  import Contact from '@/views/Contact';
+  import BigFooter from '@/views/BigFooter';
+
+  export default {
+    name: 'Home',
+    components: {
+      BigHeader,
+      Info,
+      Gallery,
+      Replies,
+      Contact,
+      BigFooter,
+    }
   }
-}
 </script>
+
+
+<style scoped>
+
+</style>
