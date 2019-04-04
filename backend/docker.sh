@@ -22,3 +22,7 @@ insert into pictures values(1,1,'http://res.cloudinary.com/demo/image/upload/v13
 insert into pictures values(2,1,'http://image.downloadwap.co.uk/wallpapers/wp/new/40/rose_IwcNjUWl0e.jpg');
 insert into pictures values(3,1,'https://c.pxhere.com/photos/51/d2/flower_peonies_blossom_blooming_plant_spring_summer_petals-562249.jpg!d');
 insert into pictures values(4,1,'https://c.pxhere.com/photos/a6/cb/plants_flowers_peonies_paeonia_lactiflora_pink_petald_flower_gardens_pot-616650.jpg!d');
+
+
+CREATE USER guestbook;
+GRANT ALL ON DATABASE guestbook TO guestbook;
