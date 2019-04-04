@@ -22,11 +22,11 @@ export const actions = {
   async [FETCH_REPLIES]({commit}) {
     try {
       let replies = await RepliesService.get();
-      commit(SET_REPLIES, replies);
+      console.log(JSON.parse(replies));
+      commit(SET_REPLIES, JSON.parse(replies));
     } catch (e) {
       commit(SET_REPLIES, []);
     }
-
   },
 };
 
